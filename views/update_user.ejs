@@ -1,0 +1,51 @@
+<%-include('include/_header') %>
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex-justify-between">
+            <div class="filter">
+                <a href="/"><i class="fas fa-angle-double-left"></i> All Users</a>
+            </div>
+        </div>
+        <div class="form-title text-center">
+            <h2 class="text-dark">Update User</h2>
+            <span class="text-light">Use the form to update an account</span>
+        </div>
+        <form method="POST" id="add_user">
+            <div class="new_user">
+                <div class="form-group">
+                    <label for="name" class="text-light">Name</label>
+                    <input type="hidden" name="id" value="">
+                    <input type="text" name="value" placeholder="Mark">
+                </div>
+                <div class="form-group">
+                    <label for="number" class="text-light">Phone Number</label>
+                    <input type="text" name="value" placeholder="5874548655">
+                </div>
+                <div class="form-group">
+                    <label for="gender" class="text-light"> Gender</label>
+                    <div>
+                        <input type="radio" id="radio-2"
+                         name="gender" value="Male">
+                        <label for="radio-2" class="radio-label">Male</label>
+                    
+                        <input type="radio" id="radio-3"
+                         name="gender" value="Female">
+                        <label for="radio-3" class="radio-label">Female</label>
+                    
+                      </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="number" class="text-light">Age</label>
+                        <input type="text" name="value" placeholder="22">
+                    </div>
+        
+                    <div class="form-group">
+                        <button type="submit" class="btn text-dark update"> Save </button>
+                    </div>
+                </div>
+                
+            </div>
+        </form>
+    </div>
+</main>
+<%-include('include/_footer') %> 
